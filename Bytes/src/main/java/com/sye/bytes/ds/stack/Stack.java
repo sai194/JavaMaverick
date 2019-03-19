@@ -1,4 +1,4 @@
-package com.sye.bytes.stack;
+package com.sye.bytes.ds.stack;
 
 public class Stack {
 	

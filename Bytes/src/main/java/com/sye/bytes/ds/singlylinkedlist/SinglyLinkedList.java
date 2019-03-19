@@ -1,4 +1,4 @@
-package com.sye.bytes.singlylinkedlist;
+package com.sye.bytes.ds.singlylinkedlist;
 
 public class SinglyLinkedList {
 
