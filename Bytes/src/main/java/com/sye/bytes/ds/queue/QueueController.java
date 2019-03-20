@@ -1,5 +1,7 @@
 package com.sye.bytes.ds.queue;
 
+import java.util.List;
+
 public class QueueController {
 	public static void main(String[] args) {
 		Queue myQueue = new Queue(5);
@@ -8,6 +10,8 @@ public class QueueController {
 		
 		myQueue.insert(99999);
 		myQueue.view();
+		
+		
 	}
 
 }
