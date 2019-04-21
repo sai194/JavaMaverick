@@ -39,4 +39,37 @@ class CheckDFS {
 	    }
     return result; //For the above graph, it should return "12453" or "13254"
   }
+  
+  public static boolean[] dfsTraversal(Graph g, int source,boolean[] visited) {
+	 
+	    int num_of_vertices = g.vertices;
+	    //boolean[] visited = new boolean[num_of_vertices];
+	    
+	    Stack<Integer> stk = new Stack<>(); 
+	    
+	    stk.push(source);
+	    visited[source] = true;
+
+	    
+	    while(!stk.isEmpty()) {
+	    	int current_node = stk.pop();
+	    
+	    	
+	    	LinkedList list = g.array[current_node];
+	    	Iterator iter = list.iterator();
+	    	while(iter.hasNext()) {
+	    		Integer vertex = (Integer) iter.next();
+	    		if(!visited[vertex]) {
+	    			stk.add(vertex);
+	    			visited[vertex]=true;
+	    		}
+	    	}
+	    }
+    return visited; 
+  }
+  
+  public static void main(String[] args) {
+	  
+  }
+  
 }
