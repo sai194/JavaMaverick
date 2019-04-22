@@ -7,21 +7,27 @@ public class BinarySearch {
 		System.out.println(binarySearch(new int[] { 1, 2, 3, 4, 7, 9, 12, 18 },7));
 	}
 
-	public static int binarySearch(int[] arr, int x) {
-		int p=0;
-		int r= arr.length;
-		int mid ;
-		
-		while(p<r) {
-			mid = (p+r)/2;
-			if(x==arr[mid]) {
-				return mid;
-			}else if (x < arr[mid]) {
-				r = mid-1;
-			}else {
-				p=mid+1;
-			}
-		}
+	public static int binarySearch(int[] A, int key) {
+		int low = 0;
+	    int high = A.length -1;
+
+	    while (low <= high) {
+
+	      int mid = low + ((high - low) / 2);
+
+	      if (A[mid] == key) {
+	        return mid;
+	      }
+
+	      if (key < A[mid]) {
+	        high = mid - 1;
+	      }
+	      else {
+	        low = mid + 1;
+	      }
+	    }
+
+	   
 		return -1;
 	}
 	
