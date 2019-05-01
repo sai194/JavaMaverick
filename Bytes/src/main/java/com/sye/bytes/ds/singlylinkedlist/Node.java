@@ -1,11 +1,14 @@
 package com.sye.bytes.ds.singlylinkedlist;
-
-public class Node {
-
-	int val;
-	Node next;
-	
-	public Node(int val) {
-		this.val = val;
+class Node {
+	int data;
+	Node nextElement;
+	public Node(int data, Node nextElement) {
+		super();
+		this.data = data;
+		this.nextElement = nextElement;
 	}
+	public Node() {
+		super();
+	}
+	
 }

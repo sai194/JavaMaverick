@@ -25,7 +25,7 @@ public class PartitionACollection {
         return list.stream()        		
                 .collect(Collectors.groupingBy(it -> counter.getAndIncrement() / size))   
                 ;
-                
+            
     }
 	
 	private static  Collection<List<Integer>> partition(Set<Integer> list, int size) {
