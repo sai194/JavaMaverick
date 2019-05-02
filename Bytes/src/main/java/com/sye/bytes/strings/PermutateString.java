@@ -3,7 +3,7 @@ package com.sye.bytes.strings;
 public class PermutateString {
 
 	public static void main(String[] args) {
-		String str = "aba";
+		String str = "abaa";
 		int n = str.length();
 		permute(str, "");
 		System.out.println();
@@ -32,7 +32,7 @@ public class PermutateString {
 
 	}
 
-	public static String swap(String a, int i, int j) {
+	/*public static String swap(String a, int i, int j) {
 
 		char temp;
 		char[] charArray = a.toCharArray();
@@ -43,7 +43,7 @@ public class PermutateString {
 		return String.valueOf(charArray);
 
 	}
-
+*/
 	static void printDistinctPermutn(String str, String ans) {
 
 		// If string is empty

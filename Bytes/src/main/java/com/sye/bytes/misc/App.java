@@ -8,6 +8,9 @@ public class App {
 		FuncionalTestInterface<String,Integer> test = (String s) ->{return s.length();};
 		System.out.println(test.transform("Sai"));
 		
+		EnumSingleton instance =EnumSingleton.INSTANCE;
+		instance.someMethod("Sai");
+		
 			
 	}
 

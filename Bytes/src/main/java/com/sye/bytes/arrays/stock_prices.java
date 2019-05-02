@@ -22,9 +22,13 @@ class stock_prices{
 
       if(current_buy > array[i]) {
         current_buy = array[i];
+        System.out.print(current_buy);
+        
       }
+     
       //System.out.println(current_buy);
     }
+    System.out.println();
     //System.out.println("final "+current_buy);
     //System.out.println("final "+global_sell);
     Tuple<Integer,Integer> result = 
